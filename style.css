@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#all {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FBFCFC;
+}
+
+h1 {
+    font-size: 11vw;
+    text-align: center;
+    padding-top: 5px;
+}
+
+#form-container {
+    width: 97%;
+    height: auto;
+    margin: 10px auto;
+    background-color: #f8f5f5;
+    border: 2px solid #000;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #FBFCFC;
+    padding: 7px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #EF5350;
+    border-bottom: 3px solid #000;
+    margin-bottom: 6px;
+}
+
+form {
+    padding-left: 6px;
+    margin-bottom: 6px;
+}
+
+input, label {
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.btn {
+    width: 70px;
+    padding: 2px;
+    color: #FBFCFC;
+    font-weight: bolder;
+    background-color: #2e2323;
+    border-radius: 4.5px;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-bottom: 6px;
+}
+
+#container {
+    width: 97%;
+    height: auto;
+    margin: 25px auto;
+}
+
+.task {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border: 1.5px solid #000;
+}
+
+.name {
+    font-size: 24px;
+    text-align: center;
+    color: #FBFCFC;
+    background-color: #507aef;
+}
+
+.description {
+    font-size: 16px;
+    padding: 9px;
+    margin-bottom: 15px;
+    margin-top: 12px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.date {
+    max-width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.time {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    font-weight: bold;
+    padding-top: 2px;
+    margin: 0 4vw 0 4vw;
+    white-space: pre;
+    text-align: center;
+    background-image: url("notebook.png");
+}
+
+.removed {
+        transform: translateX(100vw);
+        transition: transform 1s;
+}
+/* Hacer algo entre 200 y 650 y mejorar el cronometro style */
+@media (min-width:650px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    #form-container {
+        width: 30%;
+        height: auto;
+        margin-left: 3vw;
+        margin-top: 6vh;
+        display: inline-block;
+    }
+
+    #container {
+        width: 62%;
+        height: auto;
+        margin-top: 6vh;
+        right: 3vw;
+        position: absolute;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .task {
+        width: 30%;
+        display: inline-block;
+        vertical-align:top;
+        margin-left: 1.5vw;
+    }
+    .time {
+        margin: 0 0.7vw 0 0.7vw;
+    }
+}
+
+@media (min-width:900px){
+    #form-container {
+        width: 250px;
+    }
+
+    #container {
+        width: 65%;
+    }
+
+    .task {
+        width: 30%;
+    }
+}

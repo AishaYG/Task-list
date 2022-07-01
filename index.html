@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de tareas</title>
+</head>
+<body>
+    <section id="all">
+        <h1>Lista de tareas</h1>
+        <article id="form-container">
+            <h2>Tarea</h2>
+            <form>
+                <label for="task-name">Escoge el nombre de la tarea</label> <br>
+                <input maxlength="20" id="task-name" placeholder="Nombre de la tarea" name="task-name" type="text"> <br>
+                <label for="time-limit">Pon fecha límite a la tarea</label> <br>
+                <input id="time-limit" name="time-limit" placeholder="Fecha límite" type="datetime-local"> <br>
+                <label for="task-description">Define la tarea</label> <br>
+                <input id="task-description" maxlength="150" name="task-description" type="text"> <br>
+                <button class="btn" id="btn-save" type="button">Guardar</button>
+            </form>
+        </article>
+        <article id="container">
+            
+        </article>
+    </section>
+    <script src="javascript.js"></script>
+</body>
+</html>
