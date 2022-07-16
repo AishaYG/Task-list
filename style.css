@@ -61,6 +61,7 @@ input, label {
     width: 97%;
     height: auto;
     margin: 25px auto;
+    text-align: center;
 }
 
 .task {
@@ -68,6 +69,7 @@ input, label {
     height: auto;
     margin-bottom: 15px;
     border: 1.5px solid #000;
+    background-color: #fcf7f7;
 }
 
 .name {
@@ -95,21 +97,35 @@ input, label {
 
 .time {
     width: 35px;
-    height: 35px;
+    height: 50px;
     display: inline-block;
     font-weight: bold;
     padding-top: 2px;
+    padding-bottom: 2px;
     margin: 0 4vw 0 4vw;
     white-space: pre;
     text-align: center;
     background-image: url("notebook.png");
+    background-size: 35px 50px;
 }
 
 .removed {
         transform: translateX(100vw);
         transition: transform 1s;
 }
-/* Hacer algo entre 200 y 650 y mejorar el cronometro style */
+
+@media (min-width:300px){
+    #form-container {
+        width: 250px;
+    }
+    .task {
+        width: 240px;
+        display: inline-block;
+        vertical-align:top;
+        margin-left: 1.5vw;
+    }
+}
+
 @media (min-width:650px) {
     h1 {
         font-size: 45px;
@@ -131,12 +147,11 @@ input, label {
         position: absolute;
         display: inline-block;
         box-sizing: border-box;
+        text-align: start;
     }
 
     .task {
         width: 30%;
-        display: inline-block;
-        vertical-align:top;
         margin-left: 1.5vw;
     }
     .time {
